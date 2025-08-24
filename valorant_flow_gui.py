@@ -46,7 +46,7 @@ def points_to_winrate(points):
 
 # --- Streamlit GUI ---
 st.set_page_config(page_title="VALORANT 勝率計算ツール", layout="centered")
-st.title("🎮 VALORANT 勝率計算ツール")
+st.title(" VALORANT 勝率計算ツール")
 
 rounds = []
 for i, lbl in enumerate(ROUND_LABELS):
@@ -69,3 +69,4 @@ if st.button("勝率を計算"):
 
     st.success(f"ポイント: {pts:+.2f}")
     st.metric("次ラウンド勝率", f"{winrate:.2f} %")
+
